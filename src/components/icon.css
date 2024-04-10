@@ -1,0 +1,19 @@
+.icon-container {
+  display: flex;
+  position: relative;
+}
+.icon-icon {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1200px) {
+  .icon-icon {
+    top: 19px;
+    fill: #808080;
+    left: 16px;
+    width: 100px;
+    position: absolute;
+    align-self: flex-start;
+    padding-right: 50px;
+  }
+}

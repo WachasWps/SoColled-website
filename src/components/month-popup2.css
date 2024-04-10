@@ -1,0 +1,170 @@
+.month-popup2-testimonial-card {
+  width: 388px;
+  height: 459px;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 13px;
+  border-radius: 10%;
+  padding-right: 21px;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: space-between;
+  background-color: #a378ff;
+}
+.month-popup2-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.month-popup2-container1 {
+  width: 308px;
+  height: 204px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.month-popup2-laundary {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-popup2-laundry-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-popup2-text {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-text1 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-text2 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-sixunits);
+}
+.month-popup2-laundary1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-popup2-hostel-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-popup2-text3 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-text4 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-laundary2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-popup2-mess-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-popup2-text5 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-text6 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-text7 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.month-popup2-image {
+  width: 275px;
+  margin-top: var(--dl-space-space-halfunit);
+  object-fit: cover;
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.month-popup2-container2 {
+  width: 221px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-space-space-fourunits);
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: column;
+  justify-content: center;
+}
+.month-popup2-laundry-txt1 {
+  font-size: 50px;
+  align-self: flex-end;
+  margin-top: var(--dl-space-space-threeunits);
+  font-family: "Caveat Brush";
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media(max-width: 1200px) {
+  .month-popup2-image {
+    margin-top: var(--dl-space-space-fourunits);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 767px) {
+  .month-popup2-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .month-popup2-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

@@ -1,0 +1,19 @@
+.nav-comp-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: var(--dl-color-custom-bluee);
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 20px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(217, 217, 217, 0.67);
+}
+.nav-comp-root-class-name {
+  width: 90%;
+  margin-top: 200px;
+  background-color: rgba(247, 237, 237, 0.16);
+}

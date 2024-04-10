@@ -1,0 +1,22 @@
+.component3-container {
+  display: flex;
+  position: relative;
+}
+.component3-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: var(--dl-radius-radius-round);
+}
+.component3-root-class-name {
+  align-self: stretch;
+}
+.component3-root-class-name1 {
+  align-self: stretch;
+}
+@media(max-width: 767px) {
+  .component3-image {
+    width: 100%;
+  }
+}

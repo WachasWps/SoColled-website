@@ -1,0 +1,27 @@
+.resource-finder-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #000000;
+}
+.resource-finder-container1 {
+  height: 1148px;
+  display: flex;
+  margin-top: 225px;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  border-color: var(--dl-color-custom-bluee);
+  border-style: dashed;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-fourunits);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: flex-end;
+  background-color: rgba(50, 223, 236, 0.59);
+}

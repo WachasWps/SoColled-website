@@ -1,0 +1,89 @@
+.create-customs-sub-testimonial-card {
+  width: 388px;
+  height: 459px;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 7px 5px 15px 0px #fffefe;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 13px;
+  border-radius: 10%;
+  padding-right: 21px;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-color: #a378ff;
+}
+.create-customs-sub-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.create-customs-sub-text {
+  font-size: 60px;
+  margin-top: var(--dl-space-space-threeunits);
+  text-align: center;
+  font-family: "Caveat Brush";
+}
+.create-customs-sub-container1 {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+}
+.create-customs-sub-navlink {
+  color: #fff8f8;
+  width: var(--dl-size-size-xxlarge);
+  align-self: center;
+  box-shadow: 7px 5px 15px 0px #d4d4d4;
+  margin-top: 150px;
+  transition: 0.3s;
+  font-family: "Montserrat";
+  margin-left: var(--dl-space-space-twounits);
+  border-width: 0px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #020202;
+}
+
+.create-customs-sub-root-class-name {
+  margin-top: var(--dl-space-space-fourunits);
+  margin-bottom: var(--dl-space-space-unit);
+}
+@media(max-width: 1200px) {
+  .create-customs-sub-text {
+    font-size: 60px;
+    text-align: center;
+    font-family: Caveat Brush;
+  }
+  .create-customs-sub-container1 {
+    height: 195px;
+  }
+  .create-customs-sub-navlink {
+    margin-top: var(--dl-space-space-sixunits);
+  }
+  .create-customs-sub-root-class-name {
+    margin-top: var(--dl-space-space-fourunits);
+    margin-left: 0px;
+    margin-bottom: var(--dl-space-space-sixunits);
+  }
+}
+@media(max-width: 767px) {
+  .create-customs-sub-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .create-customs-sub-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

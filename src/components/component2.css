@@ -1,0 +1,9 @@
+.component2-container {
+  display: flex;
+  position: relative;
+}
+.component2-select {
+  width: 180px;
+  height: 50px;
+  position: relative;
+}

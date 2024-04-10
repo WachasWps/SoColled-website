@@ -1,0 +1,24 @@
+.pasted-image-container {
+  display: flex;
+  position: relative;
+}
+.pasted-image-pasted-image {
+  height: 600px;
+  align-self: flex-end;
+  border-color: var(--dl-color-custom-bluee);
+  border-style: dashed;
+  border-width: 2px;
+  margin-right: 0px;
+}
+.pasted-image-root-class-name1 {
+  align-self: center;
+}
+@media(max-width: 1200px) {
+  .pasted-image-container {
+    justify-content: center;
+  }
+  .pasted-image-pasted-image {
+    width: 60%;
+    height: 60%;
+  }
+}

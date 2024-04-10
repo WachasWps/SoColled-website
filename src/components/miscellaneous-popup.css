@@ -1,0 +1,201 @@
+.miscellaneous-popup-testimonial-card {
+  width: 388px;
+  height: 557px;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 13px;
+  border-radius: 10%;
+  margin-bottom: 43px;
+  padding-right: 21px;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: space-between;
+  background-color: #e320aa;
+}
+.miscellaneous-popup-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.miscellaneous-popup-container1 {
+  width: 308px;
+  height: 439px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.miscellaneous-popup-laundary {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.miscellaneous-popup-laundry-txt {
+  font-size: 35px;
+  font-family: "Caveat Brush";
+}
+.miscellaneous-popup-text {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-text01 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-text02 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-sixunits);
+}
+.miscellaneous-popup-laundary1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.miscellaneous-popup-hostel-txt {
+  font-size: 35px;
+  font-family: "Caveat Brush";
+}
+.miscellaneous-popup-text03 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-text04 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-laundary2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.miscellaneous-popup-mess-txt {
+  font-size: 35px;
+  align-self: flex-end;
+  font-family: "Caveat Brush";
+}
+.miscellaneous-popup-text05 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-text06 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-text07 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-laundary3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.miscellaneous-popup-gym-txt {
+  font-size: 35px;
+  align-self: flex-start;
+  font-family: "Caveat Brush";
+}
+.miscellaneous-popup-text08 {
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-text09 {
+  font-size: 30px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Caveat Brush";
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-image {
+  width: 275px;
+  margin-top: var(--dl-space-space-twounits);
+  object-fit: cover;
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.miscellaneous-popup-container2 {
+  width: 221px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-space-space-fourunits);
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: center;
+}
+.miscellaneous-popup-laundry-txt1 {
+  font-size: 50px;
+  align-self: flex-end;
+  margin-top: var(--dl-space-space-unit);
+  font-family: "Caveat Brush";
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media(max-width: 1200px) {
+  .miscellaneous-popup-image {
+    margin-top: var(--dl-space-space-fourunits);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 767px) {
+  .miscellaneous-popup-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .miscellaneous-popup-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

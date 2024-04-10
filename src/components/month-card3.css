@@ -1,0 +1,213 @@
+.month-card3-testimonial-card {
+  width: 388px;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 7px 5px 15px 0px #ffffff;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 13px;
+  border-radius: 10%;
+  padding-right: 21px;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: space-between;
+  background-color: #a378ff;
+}
+.month-card3-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.month-card3-container1 {
+  width: 180.20000457763672px;
+  height: 120.75px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  margin-right: var(--dl-space-space-sixunits);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.month-card3-noofmonths {
+  font-size: 105px;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.month-card3-months-txt {
+  font-size: 30px;
+  align-self: center;
+  font-style: normal;
+  margin-top: var(--dl-space-space-threeunits);
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-left: var(--dl-space-space-halfunit);
+}
+.month-card3-container2 {
+  width: 263px;
+  height: 203px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.month-card3-laundary {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-card3-icon {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-small);
+  align-self: flex-start;
+}
+.month-card3-laundry-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-card3-laundary1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-card3-icon2 {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-small);
+  align-self: flex-start;
+}
+.month-card3-hostel-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-card3-laundary2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-card3-icon4 {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-small);
+  align-self: flex-start;
+}
+.month-card3-mess-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-card3-laundary3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.month-card3-icon6 {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-small);
+  align-self: flex-start;
+}
+.month-card3-laundry-txt1 {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.month-card3-total {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.month-card3-container3 {
+  width: 221px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+}
+.month-card3-laundry-txt2 {
+  font-size: 40px;
+  align-self: center;
+  margin-top: 0px;
+  font-family: "Caveat Brush";
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.month-card3-button {
+  color: var(--dl-color-gray-white);
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  margin-top: var(--dl-space-space-unit);
+  border-color: var(--dl-color-gray-black);
+  border-radius: 40px;
+  background-color: var(--dl-color-gray-black);
+}
+
+
+@media(max-width: 1200px) {
+  .month-card3-container2 {
+    width: 267px;
+    height: 203px;
+    border-color: #a378ff;
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+  }
+  .month-card3-laundry-txt {
+    font-size: 40px;
+  }
+  .month-card3-hostel-txt {
+    font-size: 40px;
+  }
+  .month-card3-container3 {
+    width: 263px;
+    height: 106px;
+    margin-bottom: 0px;
+  }
+  .month-card3-laundry-txt2 {
+    font-size: 40px;
+    align-self: center;
+  }
+  .month-card3-button {
+    padding-top: var(--dl-space-space-halfunit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 0px;
+  }
+}
+@media(max-width: 767px) {
+  .month-card3-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .month-card3-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

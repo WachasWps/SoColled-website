@@ -1,0 +1,36 @@
+.component8-container {
+  display: flex;
+  position: relative;
+}
+.component8-image {
+  width: 162px;
+  height: 156px;
+  box-shadow: 5px 5px 10px 0px #2b2828;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+}
+.component8-root-class-name {
+  width: 96px;
+  height: 96px;
+}
+.component8-root-class-name1 {
+  width: 96px;
+  height: 96px;
+}
+.component8-root-class-name2 {
+  left: 0px;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  margin-top: auto;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  margin-right: var(--dl-space-space-oneandhalfunits);
+  margin-bottom: auto;
+}
+.component8-root-class-name3 {
+  top: -1px;
+  left: -1px;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+}

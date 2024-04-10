@@ -1,0 +1,103 @@
+.subscription-package-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000000;
+}
+.subscription-package-text {
+  color: #ffffff;
+  font-size: 90px;
+  align-self: center;
+  margin-top: 300px;
+  font-family: "Caveat Brush";
+}
+.subscription-package-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 1002px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.subscription-package-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 1093px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.subscription-package-image {
+  width: 200px;
+  align-self: center;
+  object-fit: cover;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.subscription-package-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 1002px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.subscription-package-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 1002px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.subscription-package-image1 {
+  width: 200px;
+  align-self: flex-start;
+  margin-top: var(--dl-space-space-sixunits);
+  object-fit: cover;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.subscription-package-image2 {
+  width: 200px;
+  align-self: flex-start;
+  object-fit: cover;
+  margin-left: 190px;
+}
+.subscription-package-text3 {
+  color: #ffffff;
+  font-size: 90px;
+  margin-top: 0px;
+  font-family: "Caveat Brush";
+}
+.subscription-package-container5 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 459px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media(max-width: 1200px) {
+  .subscription-package-text {
+    color: var(--dl-color-gray-white);
+    margin-top: 200px;
+  }
+  .subscription-package-image2 {
+    margin-left: var(--dl-space-space-threeunits);
+  }
+  .subscription-package-text3 {
+    color: var(--dl-color-gray-white);
+    margin-top: var(--dl-space-space-threeunits);
+  }
+}
+@media(max-width: 991px) {
+  .subscription-package-image2 {
+    margin-left: 0px;
+    margin-right: var(--dl-space-space-fiveunits);
+  }
+}

@@ -1,0 +1,22 @@
+.plans-plans {
+  gap: 50px;
+  height: 1002px;
+  display: grid;
+  position: relative;
+  margin-top: 400px;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  grid-template-columns: auto auto;
+}
+.plans-root-class-name {
+  margin-top: var(--dl-space-space-sixunits);
+  margin-bottom: 0px;
+}
+@media(max-width: 1200px) {
+  .plans-plans {
+    margin-top: 200px;
+  }
+  .plans-root-class-name {
+    margin-top: var(--dl-space-space-fourunits);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

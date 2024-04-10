@@ -1,0 +1,188 @@
+.custom-package-form-testimonial-card {
+  width: 388px;
+  height: 459px;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 13px;
+  border-radius: 10%;
+  padding-right: 21px;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: space-between;
+  background-color: #a378ff;
+}
+.custom-package-form-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.custom-package-form-container1 {
+  width: 308px;
+  height: 204px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.custom-package-form-laundary {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.custom-package-form-laundry-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.custom-package-form-select {
+  box-shadow: 2px 2px 15px 0px #d4d4d4;
+  transition: 0.3s;
+  border-color: var(--dl-color-gray-black);
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.custom-package-form-select:hover {
+  border-color: #c01616;
+  border-width: 1px;
+  border-radius: 20px;
+}
+.custom-package-form-laundary1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.custom-package-form-hostel-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.custom-package-form-select1 {
+  box-shadow: 2px 2px 15px 0px #d4d4d4;
+  transition: 0.3s;
+  border-color: var(--dl-color-gray-black);
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.custom-package-form-select1:hover {
+  border-color: #c01616;
+  border-width: 1px;
+  border-radius: 20px;
+}
+.custom-package-form-laundary2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.custom-package-form-mess-txt {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.custom-package-form-select2 {
+  box-shadow: 2px 2px 15px 0px #d4d4d4;
+  transition: 0.3s;
+  border-color: var(--dl-color-gray-black);
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.custom-package-form-select2:hover {
+  border-color: #c01616;
+  border-width: 1px;
+  border-radius: 20px;
+}
+.custom-package-form-laundary3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.custom-package-form-mess-txt1 {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+}
+.custom-package-form-select3 {
+  box-shadow: 2px 2px 15px 0px #d4d4d4;
+  transition: 0.3s;
+  border-color: var(--dl-color-gray-black);
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.custom-package-form-select3:hover {
+  border-color: #c01616;
+  border-width: 1px;
+  border-radius: 20px;
+}
+.custom-package-form-image {
+  width: 275px;
+  margin-top: var(--dl-space-space-twounits);
+  object-fit: cover;
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.custom-package-form-container2 {
+  width: 221px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-space-space-fourunits);
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-package-form-laundry-txt1 {
+  font-size: 50px;
+  align-self: flex-start;
+  margin-top: 0px;
+  font-family: "Caveat Brush";
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.custom-package-form-root-class-name {
+  width: 388px;
+  margin-top: 225px;
+}
+.custom-package-form-root-class-name1 {
+  margin-top: var(--dl-space-space-sixunits);
+}
+@media(max-width: 1200px) {
+  .custom-package-form-image {
+    margin-top: var(--dl-space-space-fourunits);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 767px) {
+  .custom-package-form-testimonial-card {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .custom-package-form-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}
