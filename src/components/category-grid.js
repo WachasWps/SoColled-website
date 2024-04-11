@@ -46,6 +46,11 @@ const CategoryGrid = (props) => {
               <h1 className="category-grid-text5">{props.heading111121}</h1>
             </div>
           </Link>
+          <Link to="/rewards" className="category-grid-navlink5">
+            <div className="category-grid-budget">
+              <h1 className="category-grid-text5">{props.rewards}</h1>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -53,22 +58,23 @@ const CategoryGrid = (props) => {
 }
 
 CategoryGrid.defaultProps = {
-  heading11: 'Study Buds',
+  heading11: 'StudyBuddy',
   rootClassName1: '',
-  heading2: 'College Resources',
+  heading2: 'ExploreResources',
   rootClassName: '',
   text1: 'Text',
-  heading112: 'Study Buds',
-  heading1: 'Student Market',
-  heading: 'College Resources',
-  text: 'Study Buds',
-  heading12: 'Student Market',
-  heading111111: 'Navigation',
-  heading111: 'Subscription',
-  heading111121: 'Budget Buddy',
-  heading1111: 'Subscription',
-  heading11111: 'Navigation',
-  heading11112: 'Budget Buddy',
+  heading112: 'StudyBuddy',
+  heading1: 'MarketMingle',
+  heading: 'ExploreResources',
+  text: 'StudyBuddy',
+  heading12: 'MarketMingle',
+  heading111111: 'CampusCompass',
+  heading111: 'PackPal',
+  heading111121: 'BudgetBuddy',
+  heading1111: 'PackPal',
+  heading11111: 'CampusCompass',
+  heading11112: 'BudgetBuddy',
+  rewards: 'TreatTrove',
 }
 
 CategoryGrid.propTypes = {
