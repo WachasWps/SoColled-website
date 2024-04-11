@@ -256,6 +256,11 @@
   left: -10px;
   align-self: center;
 }
+.header-email {
+  color: var(--dl-color-gray-900);
+  text-decoration: none;
+}
+
 @media(max-width: 1200px) {
   .header-header {
     width: 100%;

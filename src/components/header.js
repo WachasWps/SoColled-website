@@ -2,32 +2,56 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
-import { auth } from './firebase'; // Import auth from firebase.js
-import './header.css'
+import { doc, getDoc } from 'firebase/firestore';
+import { db, auth } from './firebase';
+import './header.css';
 
 const Header = (props) => {
   const [user, setUser] = useState(null);
+  const [name, setName] = useState('');
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
+      if (user) {
+        fetchUserData();
+      }
     });
     return () => {
       unsubscribe();
     };
   }, []);
 
+  const fetchUserData = async () => {
+    try {
+      const user = auth.currentUser;
+      if (user) {
+        const docRef = doc(db, 'users', user.uid);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          const userData = docSnap.data();
+          setName(userData.name);
+        } else {
+          console.log('No such document!');
+        }
+      } else {
+        console.log('No user logged in.');
+      }
+    } catch (error) {
+      console.error('Error fetching user data: ', error);
+    }
+  };
+
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
-        // Sign-out successful.
         setUser(null);
       })
       .catch((error) => {
-        // An error happened.
         console.error('Sign out error:', error);
       });
   };
+
 
   return (
     <div className={`header-header ${props.rootClassName} `}>
@@ -72,7 +96,7 @@ const Header = (props) => {
           <div className="header-buttons">
             {user ? (
               <>
-                <span className="header-email">{user.email}</span>
+                <span className="header-email">{name}</span>
                 <button className="header-sign-out buttonFlat" onClick={handleSignOut}>
                   Sign Out
                 </button>
