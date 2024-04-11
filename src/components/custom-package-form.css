@@ -1,6 +1,6 @@
 .custom-package-form-testimonial-card {
   width: 388px;
-  height: 459px;
+  height: 600px;
   display: flex;
   padding: var(--dl-space-space-twounits);
   max-width: var(--dl-size-size-maxwidth);
@@ -142,13 +142,11 @@
   margin-bottom: var(--dl-space-space-twounits);
 }
 .custom-package-form-container2 {
-  width: 221px;
-  height: 48px;
+  flex: 0 0 auto;
+  width: auto;
+  height: 66px;
   display: flex;
   align-items: center;
-  margin-left: var(--dl-space-space-fourunits);
-  margin-bottom: var(--dl-space-space-twounits);
-  flex-direction: column;
   justify-content: center;
 }
 .custom-package-form-laundry-txt1 {
@@ -166,10 +164,27 @@
 .custom-package-form-root-class-name1 {
   margin-top: var(--dl-space-space-sixunits);
 }
+.custom-package-form-pay-now {
+  background-color: black;
+  color: rgb(11, 1, 1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.custom-package-form-pay-now:hover {
+  background-color: #171111;
+}
 @media(max-width: 1200px) {
   .custom-package-form-image {
-    margin-top: var(--dl-space-space-fourunits);
-    margin-bottom: var(--dl-space-space-unit);
+    margin-top: var(--dl-space-space-threeunits);
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .custom-package-form-laundry-txt1 {
+    align-self: center;
   }
 }
 @media(max-width: 767px) {
@@ -185,4 +200,8 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
+}
+
+.custom-package-form-total {
+  margin-bottom: 50px;
 }

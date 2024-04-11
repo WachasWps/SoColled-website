@@ -8,10 +8,12 @@ import { auth, db } from './firebase'; // Import auth and db from firebase.js
 import './register-form.css';
 
 const RegisterForm = ({ history, ...props }) => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [collegeName, setCollegeName] = useState('');
   const [description, setDescription] = useState('');
+  const [mobile, setMobile] = useState('');
   const [error, setError] = useState(null);
 
   const handleRegister = () => {
@@ -21,22 +23,26 @@ const RegisterForm = ({ history, ...props }) => {
         const user = userCredential.user;
         // Add additional user information to Firestore
         setDoc(doc(db, 'users', user.uid), {
+          name: name,
           email: email,
+          mobile: mobile,
           college: collegeName,
           description: description,
         })
         .then(() => {
           console.log('User information added to Firestore');
           // Redirect to home page after successful registration
-          history.push('/home'); // Assuming the path to home page is '/home'
+          history.push('/home');
         })
         .catch((error) => {
           // Handle Firestore errors
           console.error('Error adding user information to Firestore: ', error);
+          setError('Error adding user information to Firestore');
         });
       })
       .catch((error) => {
         // Handle authentication errors
+        console.error('Error creating user:', error.message);
         setError(error.message);
       });
   };
@@ -48,9 +54,9 @@ const RegisterForm = ({ history, ...props }) => {
           <div className="register-form-container02">
             <div className="register-form-container03">
               <span className="register-form-create-your-profile">
-                <span className="">Create Your Profile</span>
-                <br />
+                Create Your Profile
               </span>
+              <br />
             </div>
             <div className="register-form-container04">
               <div className="register-form-container05">
@@ -59,6 +65,8 @@ const RegisterForm = ({ history, ...props }) => {
                   name="Name"
                   placeholder={props.nameInput}
                   className="register-form-name-input input"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <input
@@ -66,6 +74,8 @@ const RegisterForm = ({ history, ...props }) => {
                 name="Number"
                 placeholder={props.phoneInput}
                 className="register-form-input input"
+                value={mobile}
+                onChange={(e) => setMobile(e.target.value)}
               />
             </div>
             <div className="register-form-container06">
