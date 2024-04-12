@@ -45,14 +45,11 @@ const StudpartCardCreate = (props) => {
         };
 
         // Add request to user's requests collection
-        await addDoc(collection(db, `users/${user.uid}/myrequests`), requestData);
+        await addDoc(collection(db, `requests`), requestData);
         console.log('Request submitted successfully!');
 
         // Update or create user document with potential name change
-        await setDoc(doc(db, 'users', user.uid), {
-          name: name, // Update name if necessary
-          // Add other user data fields as needed
-        });
+        
         console.log('User information updated successfully!');
 
         // Additional logic (success message, redirect, etc.)
