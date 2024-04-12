@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
+import SearchBarMarketplace from '../components/search-bar-marketplace'
 import ProductCard113 from '../components/product-card113'
 import ProductCard121 from '../components/product-card121'
 import ProductCard115 from '../components/product-card115'
@@ -13,7 +14,6 @@ import ProductCard111 from '../components/product-card111'
 import ProductCard1121 from '../components/product-card1121'
 import ProductCard116 from '../components/product-card116'
 import ProductCard114 from '../components/product-card114'
-import SearchBarMarketplace from '../components/search-bar-marketplace'
 import Footer from '../components/footer'
 import './marketplace.css'
 
@@ -25,7 +25,9 @@ const Marketplace = (props) => {
         <meta property="og:title" content="Marketplace - SoCollEd" />
       </Helmet>
       <Header rootClassName="header-root-class-name1"></Header>
+      
       <footer className="marketplace-footer"></footer>
+      <SearchBarMarketplace rootClassName="search-bar-marketplace-root-class-name"></SearchBarMarketplace>
       <div data-thq="thq-dropdown" className="marketplace-dropdown list-item">
         <ul data-thq="thq-dropdown-list" className="marketplace-dropdown-list">
           <li
@@ -98,7 +100,7 @@ const Marketplace = (props) => {
         <Link to="/product-details-books" className="marketplace-navlink">
           <ProductCard11
             rootClassName="product-card11-root-class-name"
-            className="marketplace-component04"
+            className="marketplace-component05"
           ></ProductCard11>
         </Link>
         <Link to="/product-details-mouse" className="marketplace-navlink1">
@@ -118,7 +120,6 @@ const Marketplace = (props) => {
           <br></br>
         </span>
       </Link>
-      <SearchBarMarketplace rootClassName="search-bar-marketplace-root-class-name"></SearchBarMarketplace>
       <Footer rootClassName="footer-root-class-name7"></Footer>
     </div>
   )

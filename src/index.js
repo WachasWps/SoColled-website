@@ -28,6 +28,7 @@ import CustomPackagePage from './views/custom-package-page'
 import SubscriptionPackage from './views/subscription-package'
 import Rewards from './views/rewards'
 import NotFound from './views/not-found'
+import Paypal from './views/paypal'
 
 const App = () => {
   return (
@@ -67,6 +68,7 @@ const App = () => {
           exact
           path="/subscription-package"
         />
+        <Route component={Paypal} exact path="/paypal" />
         <Route component={Rewards} exact path="/rewards" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />

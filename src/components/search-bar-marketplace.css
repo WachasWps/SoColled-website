@@ -50,6 +50,10 @@
   height: 35px;
 }
 .search-bar-marketplace-textinput {
+  left: 79px;
+  width: 80%;
+  bottom: 16px;
+  position: absolute;
   border-width: 0px;
 }
 .search-bar-marketplace-text {
@@ -111,9 +115,9 @@
   height: var(--dl-size-size-xsmall);
 }
 .search-bar-marketplace-root-class-name {
-  top: 212px;
-  right: -16px;
-  width: 100%;
+  top: 207px;
+  left: 160px;
+  width: 80%;
   height: 5%;
   position: absolute;
 }
@@ -122,6 +126,10 @@
     fill: var(--dl-color-gray-black);
   }
   .search-bar-marketplace-textinput {
+    left: 79px;
+    width: 80%;
+    bottom: 16px;
+    position: absolute;
     border-width: 0px;
   }
   .search-bar-marketplace-text {
@@ -130,9 +138,9 @@
     margin-right: 265px;
   }
   .search-bar-marketplace-root-class-name {
-    right: -17px;
-    bottom: -261px;
-    margin: var(--dl-space-space-oneandhalfunits);
+    top: 231px;
+    left: 120px;
+    position: absolute;
   }
 }
 @media(max-width: 767px) {

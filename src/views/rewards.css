@@ -147,7 +147,7 @@
   left: 100px;
   color: var(--dl-color-custom-bluee);
   right: 257px;
-  width: auto;
+  width: 100%;
   bottom: 46px;
   position: absolute;
   font-size: 25px;
