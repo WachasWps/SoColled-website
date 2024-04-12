@@ -1,6 +1,7 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 import './month-card.css'
 
@@ -42,6 +43,9 @@ const MonthCard = (props) => {
       <button type="button" className="month-card-button button">
         {props.button}
       </button>
+      <Link to="/" className="month-card-button button">
+              {props.button}
+            </Link>
     </div>
   )
 }
