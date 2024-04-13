@@ -406,6 +406,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.sellproduct-upload-photo {
+  margin-bottom: 1020px;
+  margin-right: 830px;
+}
+
+
 @media(max-width: 1200px) {
   .sellproduct-text {
     top: 82px;
