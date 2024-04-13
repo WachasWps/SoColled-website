@@ -1,0 +1,324 @@
+.card-container {
+    width: 320px;
+    height: 354px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: var(--dl-radius-radius-radius4);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-container1 {
+    width: 320px;
+    height: 354px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: var(--dl-radius-radius-radius4);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-container2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 4px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-image {
+    width: 219px;
+    height: 122px;
+    object-fit: cover;
+    border-color: #8b00bd;
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: var(--dl-radius-radius-radius4);
+    border-bottom-width: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-feature-card {
+    width: 219px;
+    height: 281px;
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    position: relative;
+    box-shadow: 5px 5px 10px 0px #8b00bd;
+    align-items: center;
+    border-color: #8b00bd;
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dl-color-custom-purplee);
+    border-top-width: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card-container3 {
+    width: 281px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-text {
+    color: var(--dl-color-gray-white);
+    font-size: 25px;
+    font-style: normal;
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .card-thq-dropdown {
+    cursor: pointer;
+    height: 74px;
+    display: inline-block;
+    position: relative;
+    border-radius: var(--dl-radius-radius-radius2);
+  }
+  .card-dropdown-toggle {
+    fill: #595959;
+    color: var(--dl-color-gray-white);
+    width: 100%;
+    display: inline-flex;
+    margin-top: var(--dl-space-space-twounits);
+    align-items: center;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-radius2);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
+    background-color: #8b00bd;
+  }
+  .card-text1 {
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .card-dropdown-arrow {
+    transition: 0.3s;
+  }
+  .card-icon {
+    fill: var(--dl-color-gray-white);
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+  }
+  .card-dropdown-list {
+    left: 0%;
+    width: max-content;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    min-width: 100%;
+    transition: 0.3s;
+    align-items: stretch;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--dl-color-gray-white);
+    list-style-position: inside;
+  }
+  .card-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: var(--dl-radius-radius-radius2);
+  }
+  .card-dropdown-toggle1 {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-radius4);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .card-dropdown-toggle1:hover {
+    fill: #fff;
+    color: #fff;
+    background-color: #595959;
+  }
+  .card-text2 {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .card-dropdown1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: var(--dl-radius-radius-radius2);
+  }
+  .card-dropdown-toggle2 {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-radius4);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .card-dropdown-toggle2:hover {
+    fill: #fff;
+    color: #fff;
+    background-color: #595959;
+  }
+  .card-text3 {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .card-dropdown2 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: var(--dl-radius-radius-radius2);
+  }
+  .card-dropdown-toggle3 {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-radius4);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .card-dropdown-toggle3:hover {
+    fill: #fff;
+    color: #fff;
+    background-color: #595959;
+  }
+  .card-text4 {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .card-dropdown3 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: var(--dl-radius-radius-radius2);
+  }
+  .card-dropdown-toggle4 {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-radius4);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .card-dropdown-toggle4:hover {
+    fill: #fff;
+    color: #fff;
+    background-color: #595959;
+  }
+  .card-text5 {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .card-container4 {
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .card-icon2 {
+    width: 22px;
+    height: 23px;
+    margin-top: var(--dl-space-space-unit);
+  }
+  .card-container5 {
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .card-text6 {
+    font-size: 20px;
+    font-style: normal;
+    margin-top: var(--dl-space-space-unit);
+    font-weight: 600;
+    margin-left: var(--dl-space-space-halfunit);
+  }
+  
+  
+  .card-root-class-name3 {
+    margin-left: var(--dl-space-space-sixunits);
+  }
+  .card-root-class-name4 {
+    margin-left: var(--dl-space-space-sixunits);
+  }
+  .card-root-class-name5 {
+    margin-left: var(--dl-space-space-sixunits);
+  }
+  .card-root-class-name6 {
+    margin-left: var(--dl-space-space-sixunits);
+  }
+  
+  .card-root-class-name8 {
+    margin-left: var(--dl-space-space-sixunits);
+  }
+  .card-root-class-name9 {
+    margin-left: var(--dl-space-space-sixunits);
+  }
+  @media(max-width: 1200px) {
+    .card-container {
+      width: 286px;
+      height: 308px;
+      background-color: #BFAAEB;
+    }
+    .card-container1 {
+      width: 286px;
+      height: 308px;
+      background-color: #BFAAEB;
+    }
+  }
+  
