@@ -1,0 +1,207 @@
+.ai-prediction-container {
+    width: auto;
+    height: 627px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ai-prediction-container1 {
+    width: 462px;
+    height: 611px;
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    margin-top: var(--dl-space-space-threeunits);
+    align-items: flex-start;
+    border-color: var(--dl-color-custom-purplee);
+    border-style: inset;
+    border-width: 15px;
+    margin-right: 0 px;
+    border-radius: 20px;
+    margin-bottom: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    background-color: var(--dl-color-gray-black);
+  }
+  .ai-prediction-container2 {
+    flex: 0 0 auto;
+    width: auto;
+    height: 51px;
+    display: flex;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ai-prediction-container3 {
+    width: 348px;
+    height: 63px;
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+    align-items: center;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dl-color-custom-primary1);
+  }
+  .ai-prediction-text {
+    color: var(--dl-color-gray-black);
+    width: 100%;
+    font-size: 38px;
+    align-self: center;
+    font-style: normal;
+    font-family: "Exo 2";
+    font-weight: 400;
+    padding-left: 8px;
+  }
+  .ai-prediction-text01 {
+    padding: 5%;
+    align-self: center;
+    font-style: normal;
+    margin-top: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde 100%);
+  }
+  .ai-prediction-text02 {
+    color: var(--dl-color-gray-white);
+    font-size: 30px;
+    align-self: flex-start;
+    font-style: normal;
+    margin-top: var(--dl-space-space-twounits);
+    font-family: "Exo 2";
+    font-weight: 500;
+    margin-left: var(--dl-space-space-twounits);
+  }
+  .ai-prediction-container4 {
+    width: 229px;
+    height: 71px;
+    display: flex;
+    align-self: center;
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    border-color: var(--dl-color-gray-white);
+    border-width: 1px;
+    border-radius: 20px;
+  }
+  .ai-prediction-icon {
+    fill: var(--dl-color-gray-white);
+    width: 27px;
+    height: 48px;
+    align-self: center;
+    margin-left: var(--dl-space-space-unit);
+  }
+  .ai-prediction-text03 {
+    color: var(--dl-color-gray-white);
+    font-size: 50px;
+    align-self: center;
+    font-style: normal;
+    margin-top: 0px;
+    font-weight: 600;
+    margin-right: var(--dl-space-space-unit);
+  }
+  .ai-prediction-container5 {
+    flex: 0 0 auto;
+    width: auto;
+    border: 2px dashed rgba(120, 120, 120, 0.4);
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-image: linear-gradient(to right, #c02425 0%, #f0cb35 100%);
+  }
+  .ai-prediction-text04 {
+    color: var(--dl-color-gray-white);
+    font-size: 40px;
+    align-self: center;
+    font-style: normal;
+    margin-top: var(--dl-space-space-twounits);
+    font-family: "Exo 2";
+    font-weight: 400;
+    margin-left: 0px;
+  }
+  .ai-prediction-feature-card {
+    width: 312px;
+    height: 242px;
+    display: flex;
+    align-self: center;
+    margin-top: var(--dl-space-space-unit);
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    border-radius: 20px;
+    margin-bottom: var(--dl-space-space-unit);
+    flex-direction: column;
+    padding-bottom: 0px;
+    background-color: #D9D9D9;
+  }
+  .ai-prediction-container6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ai-prediction-container7 {
+    height: 223px;
+    display: flex;
+    align-self: stretch;
+    margin-top: var(--dl-space-space-unit);
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    flex-direction: column;
+  }
+  .ai-prediction-food {
+    font-size: 30px;
+    align-self: stretch;
+    font-style: normal;
+    margin-top: 0px;
+    font-family: "Exo 2";
+    font-weight: 500;
+    margin-left: 0px;
+  }
+  .ai-prediction-text05 {
+    font-size: 30px;
+    align-self: stretch;
+    font-style: normal;
+    margin-top: 0px;
+    font-family: "Exo 2";
+    font-weight: 500;
+  }
+  .ai-prediction-text06 {
+    font-size: 30px;
+    align-self: stretch;
+    font-style: normal;
+    font-family: "Exo 2";
+    font-weight: 500;
+  }
+  .ai-prediction-text07 {
+    font-size: 30px;
+    align-self: stretch;
+    font-style: normal;
+    font-family: "Exo 2";
+    font-weight: 500;
+  }
+  .ai-prediction-text08 {
+    font-size: 30px;
+    align-self: stretch;
+    font-style: normal;
+    font-family: "Exo 2";
+    font-weight: 500;
+  }
+  .ai-prediction-text09 {
+    font-size: 30px;
+    align-self: stretch;
+    font-style: normal;
+    font-family: "Exo 2";
+    font-weight: 500;
+  }
+  .ai-prediction-root-class-name {
+    align-self: center;
+    margin-left: 1%;
+    margin-right: 18.5%;
+  }
+  
