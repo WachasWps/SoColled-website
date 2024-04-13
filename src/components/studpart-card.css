@@ -53,6 +53,33 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.studpart-card-button1 {
+  display: flex;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #2b2828;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  background-color: var(--dl-color-success-700); /* Change background color to green */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius for button */
+  padding: 8px 16px; /* Add padding */
+  align-items: center; /* Align items horizontally */
+}
+
+.studpart-card-button1:hover {
+  background-color: #4caf50; /* Change background color on hover */
+}
+
+.studpart-card-button1 .studpart-card-icon08 {
+  fill: white; /* Icon color */
+  margin-right: 8px; /* Add space between icon and text */
+}
+
+.studpart-card-text2 {
+  margin-left: var(--dl-space-space-unit);
+}
+
 .studpart-card-name {
   color: var(--dl-color-custom-neutral-light);
   width: 112px;
