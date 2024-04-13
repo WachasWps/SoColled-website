@@ -38,7 +38,7 @@ const SearchBarMarketplace = (props) => {
         </div>
         <input
           type="text"
-          value="Search"
+          value="  "
           placeholder={props.textinputPlaceholder}
           className="search-bar-marketplace-textinput input"
         />

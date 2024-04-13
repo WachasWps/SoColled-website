@@ -11,10 +11,11 @@
 .marketplace-footer {
   width: 100%;
   border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: 1487px;
+  height: 1529px;
   display: flex;
   opacity: 0;
   max-width: var(--dl-size-size-maxwidth);
+  align-self: flex-end;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-threeunits);
@@ -214,8 +215,9 @@
 }
 .marketplace-product-cards {
   top: 340px;
-  left: 148px;
-  width: 80%;
+  left: 7.5%;
+  right: 15%;
+  width: 85%;
   height: 1039px;
   display: flex;
   position: absolute;
@@ -226,7 +228,7 @@
 .marketplace-navlink {
   display: contents;
 }
-.marketplace-component04 {
+.marketplace-component05 {
   text-decoration: none;
 }
 .marketplace-navlink1 {
@@ -290,6 +292,7 @@
   }
   .marketplace-text08 {
     color: var(--dl-color-gray-black);
+    font-family: "Caveat Brush";
   }
 }
 @media(max-width: 767px) {

@@ -32,7 +32,7 @@ const SubscriptionPackage = (props) => {
               <Plans rootClassName="plans-root-class-name"></Plans>
               <img
                 alt="image"
-                src="/external/whatsapp_image_2024-04-03_at_2.29.28_pm-removebg-preview-1100h.png"
+                src="/external/whatsapp_image_2024-04-03_at_2.29.28_pm-removebg-preview-1200h.png"
                 className="subscription-package-image1"
               />
             </div>

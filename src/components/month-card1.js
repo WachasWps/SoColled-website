@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -46,15 +47,15 @@ const MonthCard1 = (props) => {
         <span className="month-card1-text">{props.text}</span>
         <span className="month-card1-laundry-txt1">{props.text431}</span>
       </div>
-      <button type="button" className="month-card1-button button">
+      <Link to="Paypal" className="month-card1-navlink button">
         {props.button}
-      </button>
+      </Link>
     </div>
   )
 }
 
 MonthCard1.defaultProps = {
-  button: 'Pay Now',
+  button: 'Buy Now',
   text45: 'Hostel Fees',
   text: '_________________________________',
   imageAlt3: 'image',
