@@ -9,6 +9,7 @@ import Reward5 from '../components/reward5';
 import Footer from '../components/footer';
 import './rewards.css';
 
+
 const Rewards = () => {
   const [totalRewards, setTotalRewards] = useState(0);
   const [claimedRewards, setClaimedRewards] = useState({
@@ -19,12 +20,14 @@ const Rewards = () => {
     reward5: false,
   });
 
+
   const claimReward = (points, rewardName) => {
     if (!claimedRewards[rewardName]) {
       setTotalRewards(totalRewards + points);
       setClaimedRewards({ ...claimedRewards, [rewardName]: true });
     }
   };
+
 
   return (
     <div className="rewards-container">
@@ -52,7 +55,7 @@ const Rewards = () => {
             </svg>
             <span className="rewards-text10">Filled Faculty Feedback on time</span>
             <span className="rewards-text11">50 Points</span>
-            <button type="button" className="rewards-button2 button" onClick={() => claimReward(0, 'reward1')}>GO</button>
+            <button type="button" className={`rewards-button2 button ${claimedRewards.reward1 ? 'claimed' : ''}`} onClick={() => claimReward(50, 'reward1')}>{claimedRewards.reward1 ? 'CLAIMED' : 'CLAIM'}</button>
           </div>
           {/* Reward 2 */}
           <div className="rewards-container05">
@@ -61,7 +64,7 @@ const Rewards = () => {
             </svg>
             <span className="rewards-text12">Filled Exam Fees on Time</span>
             <span className="rewards-text13">100 Points</span>
-            <button type="button" className="rewards-button3 button" onClick={() => claimReward(0, 'reward2')}>GO</button>
+            <button type="button" className={`rewards-button3 button ${claimedRewards.reward2 ? 'claimed' : ''}`} onClick={() => claimReward(100, 'reward2')}>{claimedRewards.reward2 ? 'CLAIMED' : 'CLAIM'}</button>
           </div>
           {/* Reward 3 */}
           <div className="rewards-container06">
@@ -70,7 +73,7 @@ const Rewards = () => {
             </svg>
             <span className="rewards-text14">Completed Your Assignments on Time</span>
             <span className="rewards-text15">75 Points</span>
-            <button type="button" className="rewards-button4 button" onClick={() => claimReward(75, 'reward3')}>CLAIM</button>
+            <button type="button" className={`rewards-button4 button ${claimedRewards.reward3 ? 'claimed' : ''}`} onClick={() => claimReward(75, 'reward3')}>{claimedRewards.reward3 ? 'CLAIMED' : 'CLAIM'}</button>
           </div>
           {/* Reward 4 */}
           <div className="rewards-container07">
@@ -79,7 +82,7 @@ const Rewards = () => {
             </svg>
             <span className="rewards-text16">Completed Your Project on Time</span>
             <span className="rewards-text17">75 Points</span>
-            <button type="button" className="rewards-button5 button" onClick={() => claimReward(75, 'reward4')}>CLAIM</button>
+            <button type="button" className={`rewards-button5 button ${claimedRewards.reward4 ? 'claimed' : ''}`} onClick={() => claimReward(75, 'reward4')}>{claimedRewards.reward4 ? 'CLAIMED' : 'CLAIM'}</button>
           </div>
           {/* Reward 5 */}
           <div className="rewards-container08">
@@ -88,7 +91,7 @@ const Rewards = () => {
             </svg>
             <span className="rewards-text18">Filled The Fees on Time</span>
             <span className="rewards-text19">100 Points</span>
-            <button type="button" className="rewards-button6 button" onClick={() => claimReward(0, 'reward5')}>GO</button>
+            <button type="button" className={`rewards-button6 button ${claimedRewards.reward5 ? 'claimed' : ''}`} onClick={() => claimReward(100, 'reward5')}>{claimedRewards.reward5 ? 'CLAIMED' : 'CLAIM'}</button>
           </div>
           <div className="rewards-container09">
             <svg viewBox="0 0 1024 1024" className="rewards-icon">
@@ -96,13 +99,16 @@ const Rewards = () => {
             </svg>
             <span className="rewards-text10">Filled the feedback form of Month March</span>
             <span className="rewards-text11">50 Points</span>
-            <button type="button" className="rewards-button2 button" onClick={() => claimReward(0, 50)}>GO</button>
+            <button type="button" className={`rewards-button2 button ${claimedRewards.reward6 ? 'claimed' : ''}`} onClick={() => claimReward(50, 'reward6')}>{claimedRewards.reward6 ? 'CLAIMED' : 'CLAIM'}</button>
           </div>
           {/* Add more reward containers and buttons as needed */}
         </div>
       </div>
-
+ 
+ 
 export default Rewards;
+
+
 
 
       <div className="rewards-container10">
@@ -120,5 +126,6 @@ export default Rewards;
     </div>
   )
 }
+
 
 export default Rewards

@@ -9,10 +9,13 @@
   background-color: #000000;
 }
 .chatroom-container1 {
-  width: 90%;
-  height: 516px;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 1139px;
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
   justify-content: flex-end;
 }
