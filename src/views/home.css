@@ -21,7 +21,7 @@
   background-size: cover;
   justify-content: center;
   background-color: transparent;
-  background-image: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDM0fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTIxNDQwNDd8MA&ixlib=rb-4.0.3&w=1500");
+  background-image: url("bg.png");
 }
 .home-container1 {
   flex: 0 0 auto;

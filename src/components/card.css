@@ -29,7 +29,7 @@
     justify-content: center;
   }
   .card-image {
-    width: 219px;
+    width: 90%;
     height: 122px;
     object-fit: cover;
     border-color: #8b00bd;
@@ -43,7 +43,7 @@
     border-bottom-right-radius: 0;
   }
   .card-feature-card {
-    width: 219px;
+    width: 90%;
     height: 281px;
     display: flex;
     padding: var(--dl-space-space-twounits);
