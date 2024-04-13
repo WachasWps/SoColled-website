@@ -15,6 +15,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: space-between;
   background-color: #a378ff;
+  margin-top: 150px;
 }
 .custom-package-form-container {
   flex: 0 0 auto;
