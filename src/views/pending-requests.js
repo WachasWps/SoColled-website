@@ -51,10 +51,7 @@ const PendingRequests = (props) => {
         </div>
       </div>
       <div className="pending-requests-container5">
-        <span className="pending-requests-text05">
-          <span>Click Red Flag to remove</span>
-          <br></br>
-        </span>
+        
         <span className="pending-requests-text08">
           <span>Click Green Flag to accept</span>
           <br></br>

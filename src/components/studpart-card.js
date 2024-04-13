@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { collection, query, where, getDocs, doc, deleteDoc } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore'; // Import getDoc function for fetching individual document
 import { db, auth } from './firebase';
 import './studpart-card.css';
 
@@ -17,11 +17,12 @@ const StudpartCard = (props) => {
           const querySnapshot = await getDocs(q);
           const requests = [];
           const requestIds = new Set(); // to track duplicate requests
-          querySnapshot.forEach((doc) => {
+          querySnapshot.forEach(async (doc) => {
             const requestId = doc.id;
             if (!requestIds.has(requestId)) {
               requestIds.add(requestId);
-              requests.push({ id: requestId, ...doc.data() });
+              const userData = await getUserData(doc.data().userId); // Fetch user data for each request
+              requests.push({ id: requestId, userData, ...doc.data() });
             }
           });
           setPendingRequests(requests);
@@ -36,6 +37,22 @@ const StudpartCard = (props) => {
     fetchPendingRequests();
   }, []);
 
+  // Function to fetch user data based on userId
+  const getUserData = async (userId) => {
+    try {
+      const userDoc = await getDoc(doc(db, 'users', userId)); // Assuming users collection name is 'users'
+      if (userDoc.exists()) {
+        return userDoc.data();
+      } else {
+        console.log('User document not found.');
+        return null;
+      }
+    } catch (error) {
+      console.error('Error fetching user data: ', error);
+      return null;
+    }
+  };
+
   const handleAccept = async (requestId) => {
     try {
       // Remove the request from the list
@@ -46,24 +63,14 @@ const StudpartCard = (props) => {
     }
   };
 
-  const handleDecline = async (requestId) => {
-    try {
-      // Remove the request from the list
-      setPendingRequests(pendingRequests.filter((request) => request.id !== requestId));
-      // You can add logic here to handle declining the request, such as deleting the request from the database
-    } catch (error) {
-      console.error('Error declining request: ', error);
-    }
-  };
-
   return (
     <ul className={`study-partner-container5 ${props.rootClassName}`}>
       {pendingRequests.map((request) => (
         <li key={request.id} className="studpart-card-feature-card">
           {/* Your existing component content */}
           <div className="studpart-card-container1">
-            <h1 className="studpart-card-name">{props.heading}</h1>
-            <h1 className="studpart-card-name1">{props.heading1}</h1>
+            <h1 className="studpart-card-name">{request.userData ? request.userData.name : 'Name not available'}</h1>
+            <h1 className="studpart-card-name1">{request.userData ? request.userData.college : 'College name not available'}</h1>
           </div>
           {/* Display pending requests */}
           <div className="pending-requests">
@@ -75,7 +82,6 @@ const StudpartCard = (props) => {
             <button onClick={() => handleAccept(request.id)} className="accept-button">
               Green Flag
             </button>
-            
           </div>
         </li>
       ))}
@@ -106,4 +112,3 @@ StudpartCard.propTypes = {
 };
 
 export default StudpartCard;
-
