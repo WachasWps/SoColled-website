@@ -30,11 +30,7 @@ const SubscriptionPackage = (props) => {
           <div className="subscription-package-container3">
             <div className="subscription-package-container4">
               <Plans rootClassName="plans-root-class-name"></Plans>
-              <img
-                alt="image"
-                src="/external/whatsapp_image_2024-04-03_at_2.29.28_pm-removebg-preview-1200h.png"
-                className="subscription-package-image1"
-              />
+              
             </div>
           </div>
         </div>

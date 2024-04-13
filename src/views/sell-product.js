@@ -5,8 +5,6 @@ import { auth, db } from '../components/firebase';
 import { setDoc, doc } from "firebase/firestore";
 
 import Header from '../components/header';
-import Component4 from '../components/component4';
-import AddPrice from '../components/add-price';
 import Footer from '../components/footer';
 import './sell-product.css';
 
@@ -19,6 +17,12 @@ const SELLPRODUCT = (props) => {
 
   const handlePostAd = () => {
     const uid = auth.currentUser.uid;
+
+    // Here, we'll ensure that all fields are filled before proceeding to post the ad
+    if (!title || !description || !price) {
+      setError('Please fill in all the required fields.');
+      return;
+    }
 
     setDoc(doc(db, 'ads', uid), {
       title: title,
@@ -44,53 +48,48 @@ const SELLPRODUCT = (props) => {
         <meta property="og:title" content="SELL-PRODUCT - SoCollEd" />
       </Helmet>
       <Header rootClassName="header-root-class-name16" />
-      <header data-role="Header" className="sellproduct-header">
-        <svg viewBox="0 0 1024 1024" className="sellproduct-icon">
-          {/* Your SVG icon */}
-        </svg>
-      </header>
       <h1 className="sellproduct-text">POST YOUR AD</h1>
       <div className="sellproduct-hero">
         <span className="sellproduct-text1">INCLUDE SOME DETAILS</span>
-        <Component4 rootClassName="component4-root-class-name1" />
-        <AddPrice
-          rootClassName="add-price-root-class-name"
-          // Handling price input
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-        />
+        <div className="sellproduct-container01">
+          <input
+            type="text"
+            placeholder="Enter description"
+            className="sellproduct-textinput input"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+          <span className="sellproduct-ad-title">Description</span>
+          <span className="sellproduct-important">*</span>
+        </div>
+        <div className="sellproduct-container02">
+          <input
+            type="text"
+            placeholder="Enter ad title"
+            className="input sellproduct-textinput1"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <span className="sellproduct-ad-title1">Ad Title</span>
+          <span className="sellproduct-important1">*</span>
+        </div>
         <div className="sellproduct-set-a-price">
           <input
             type="number"
             placeholder="Enter price"
-            className="input sellproduct-textinput"
+            className="input sellproduct-textinput2"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
-          <span className="sellproduct-ad-title">Price</span>
-          <span className="sellproduct-important">*</span>
+          <span className="sellproduct-ad-title2">Price</span>
+          <span className="sellproduct-important2">*</span>
         </div>
-        <label className="sellproduct-text2" htmlFor="upload-photos">
-          Upload Photos
-        </label>
-        <input
-          type="file"
-          id="upload-photos"
-          className="sellproduct-upload-photos"
-          accept="image/*"
-          multiple
-          onChange={(e) => setPhotos(Array.from(e.target.files))}
-        />
-        <div className="sellproduct-choose-file">
-          <label htmlFor="file-path" className="sellproduct-text3">Choose File:</label>
-          <input type="text" id="file-path" className="sellproduct-file-path" />
-        </div>
+        <span className="sellproduct-text2">Upload Photos</span>
         <Link to="/marketplace" className="sellproduct-navlink button" onClick={handlePostAd}>
           Post Ad
         </Link>
         {error && <p className="sellproduct-error">{error}</p>}
       </div>
-      <div className="sellproduct-footer"></div>
       <Footer rootClassName="footer-root-class-name17" />
     </div>
   );

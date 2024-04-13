@@ -155,11 +155,12 @@
   margin-right: 0px;
   margin-bottom: 0px;
 }
-.month-card-button {
+.month-card-navlink {
   color: var(--dl-color-gray-white);
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   border-color: var(--dl-color-gray-black);
   border-radius: 40px;
+  text-decoration: none;
   background-color: var(--dl-color-gray-black);
 }
 @media(max-width: 1200px) {
@@ -167,7 +168,7 @@
     height: 73px;
     margin-top: var(--dl-space-space-unit);
   }
-  .month-card-button {
+  .month-card-navlink {
     border-width: 0px;
     background-color: #000000;
   }

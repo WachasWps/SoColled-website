@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -55,10 +56,10 @@ const MonthCard2 = (props) => {
       <div className="month-card2-container3">
         <span className="month-card2-text">{props.text}</span>
         <span className="month-card2-laundry-txt2">{props.text431}</span>
-        <button type="button" className="month-card2-button button">
-          {props.button}
-        </button>
       </div>
+      <Link to="/paypal" className="month-card2-navlink button">
+        {props.button1}
+      </Link>
     </div>
   )
 }
@@ -67,10 +68,11 @@ MonthCard2.defaultProps = {
   imageAlt3: 'image',
   text45: 'Hostel Fees',
   rootClassName: '',
-  text431: 'Total-$52000!',
-  button: 'Pay Now',
+  text431: 'Total-₹52000!',
+  button: 'Buy Now',
   text1211: '12',
   text: '_______________________________',
+  button1: 'Buy now',
   text44: 'Mess Fees',
   text4: 'Laundry',
   text11: 'months',
@@ -86,6 +88,7 @@ MonthCard2.propTypes = {
   button: PropTypes.string,
   text1211: PropTypes.string,
   text: PropTypes.string,
+  button1: PropTypes.string,
   text44: PropTypes.string,
   text4: PropTypes.string,
   text11: PropTypes.string,

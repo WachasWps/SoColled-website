@@ -51,8 +51,8 @@
   margin-left: var(--dl-space-space-halfunit);
 }
 .month-card2-container2 {
-  width: 263px;
-  height: 204px;
+  width: 260px;
+  height: 201px;
   display: flex;
   align-self: center;
   align-items: flex-start;
@@ -141,12 +141,13 @@
   flex-direction: column;
 }
 .month-card2-container3 {
-  width: 269px;
-  height: 112px;
+  width: 252px;
+  height: 55px;
   display: flex;
   align-items: center;
   margin-left: 0px;
-  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: column;
   justify-content: center;
 }
@@ -163,12 +164,12 @@
   margin-right: 0px;
   margin-bottom: 0px;
 }
-.month-card2-button {
+.month-card2-navlink {
   color: var(--dl-color-gray-white);
   box-shadow: 5px 5px 10px 0px #d4d4d4;
-  border-color: var(--dl-color-gray-black);
   border-radius: 40px;
-  background-color: #000000;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-black);
 }
 .month-card2-root-class-name {
   height: auto;
@@ -190,16 +191,6 @@
     align-self: center;
     margin-right: 0px;
     margin-bottom: 0px;
-  }
-  .month-card2-button {
-    color: var(--dl-color-gray-white);
-    box-shadow: 5px 5px 10px 0px #d4d4d4;
-    border-color: var(--dl-color-gray-white);
-    border-width: 0px;
-    border-radius: 40px;
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-halfunit);
-    background-color: #060606;
   }
 }
 @media(max-width: 767px) {

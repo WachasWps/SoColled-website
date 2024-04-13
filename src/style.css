@@ -43,13 +43,14 @@
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
-  color: var(--dl-color-gray-black);
+  color: white;
   display: inline-block;
   padding: 0.5rem 1rem;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+  border-radius: 20px;
+  box-shadow:5px 5px 10px 0px #d4d4d4;
+  background-color: black;
 }
 .input {
   color: var(--dl-color-gray-black);

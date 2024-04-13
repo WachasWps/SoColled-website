@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom';
 
 import './month-card.css'
 
@@ -40,12 +40,9 @@ const MonthCard = (props) => {
         <span className="month-card-text">{props.text7}</span>
         <span className="month-card-laundry-txt1">{props.text431}</span>
       </div>
-      <button type="button" className="month-card-button button">
+      <Link to="/paypal" className="month-card-navlink button">
         {props.button}
-      </button>
-      <Link to="/" className="month-card-button button">
-              {props.button}
-            </Link>
+      </Link>
     </div>
   )
 }
@@ -59,14 +56,14 @@ MonthCard.defaultProps = {
   text43: 'Gym',
   name: 'Jane Doe',
   text1: '3',
-  text431: 'Total-$15000',
+  text431: 'Total-₹15000',
   imageAlt3: 'image',
   text45: 'Hostel Fees',
   imageSrc2: 'https://play.teleporthq.io/static/svg/default-img.svg',
   role: '3',
   text5: 'Total-',
   imageAlt1: 'image',
-  button: 'Pay Now',
+  button: 'Buy Now',
   text111: 'months',
   quote:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem lorem, malesuada in metus vitae, scelerisque accumsan ipsum.  Nam pellentesque nulla leo, sagittis vehicula sem commodo nec.',

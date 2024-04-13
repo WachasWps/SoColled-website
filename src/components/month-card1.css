@@ -140,11 +140,12 @@
 }
 .month-card1-button {
   color: var(--dl-color-gray-white);
-  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  box-shadow: 5px 5px 10px 0px #000000;
   border-color: var(--dl-color-gray-black);
-  border-radius: 40px;
+  border-radius: 40%;
   background-color: var(--dl-color-gray-black);
 }
+
 
 @media(max-width: 1200px) {
   .month-card1-container3 {
@@ -168,7 +169,7 @@
   }
   .month-card1-button {
     align-self: center;
-    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    box-shadow: 5px 5px 10px 0px #000000;
     border-width: 0px;
     padding-left: 1rem;
     margin-bottom: 0px;
@@ -188,4 +189,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
+}
+.month-card1-navlink button {
+  border-radius: 40%;
 }
