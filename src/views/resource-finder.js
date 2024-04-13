@@ -12,6 +12,7 @@ const ResourceFinder = (props) => {
     <div className="resource-finder-container">
       <Helmet>
         <title>Resource-Finder - SoCollEd</title>
+        <header> College</header>
         <meta property="og:title" content="Resource-Finder - SoCollEd" />
       </Helmet>
       <Header rootClassName="header-root-class-name20"></Header>
