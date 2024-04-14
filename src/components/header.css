@@ -1,3 +1,5 @@
+
+
 .header-header {
   width: 100%;
   height: 180px;
@@ -68,6 +70,11 @@
   text-decoration: none;
 }
 .header-nav522 {
+  color: var(--dl-color-gray-900);
+  margin-left: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.header-nav999 {
   color: var(--dl-color-gray-900);
   margin-left: var(--dl-space-space-unit);
   text-decoration: none;
@@ -183,6 +190,7 @@
   height: var(--dl-size-size-xsmall);
 }
 
+
 .header-root-class-name1 {
   top: 4px;
   left: 0px;
@@ -190,6 +198,8 @@
   bottom: 30px;
   position: static;
 }
+
+
 
 
 .header-root-class-name4 {
@@ -260,6 +270,7 @@
   color: var(--dl-color-gray-900);
   text-decoration: none;
 }
+
 
 @media(max-width: 1200px) {
   .header-header {
@@ -338,3 +349,9 @@
     padding: 16px;
   }
 }
+
+
+
+
+
+

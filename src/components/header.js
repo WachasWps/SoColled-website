@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -6,9 +8,11 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db, auth } from './firebase';
 import './header.css';
 
+
 const Header = (props) => {
   const [user, setUser] = useState(null);
   const [name, setName] = useState('');
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -21,6 +25,7 @@ const Header = (props) => {
       unsubscribe();
     };
   }, []);
+
 
   const fetchUserData = async () => {
     try {
@@ -42,6 +47,7 @@ const Header = (props) => {
     }
   };
 
+
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
@@ -51,6 +57,8 @@ const Header = (props) => {
         console.error('Sign out error:', error);
       });
   };
+
+
 
 
   return (
@@ -91,6 +99,9 @@ const Header = (props) => {
             </Link>
             <Link to="/marketplace" className="header-nav524 bodySmall">
               {props.nav5221111}
+            </Link>
+            <Link to="/fees" className="header-nav999 bodySmall">
+              {props.nav999}
             </Link>
           </nav>
           <div className="header-buttons">
@@ -187,6 +198,7 @@ const Header = (props) => {
   )
 }
 
+
 Header.defaultProps = {
   nav52: 'TreatTrove',
   imageAlt: 'image',
@@ -211,7 +223,9 @@ Header.defaultProps = {
   nav522111: 'TreatTrove',
   register: 'Register',
   nav5221111: 'MarketMingle',
+  nav999: 'Fees',
 }
+
 
 Header.propTypes = {
   nav52: PropTypes.string,
@@ -237,6 +251,8 @@ Header.propTypes = {
   nav522111: PropTypes.string,
   register: PropTypes.string,
   nav5221111: PropTypes.string,
+  nav999: PropTypes.string,
 }
+
 
 export default Header

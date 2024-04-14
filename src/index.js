@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {
@@ -6,6 +8,7 @@ import {
   Switch,
   Redirect,
 } from 'react-router-dom'
+
 
 import './style.css'
 import SELLPRODUCT from './views/sell-product'
@@ -29,6 +32,8 @@ import SubscriptionPackage from './views/subscription-package'
 import Rewards from './views/rewards'
 import NotFound from './views/not-found'
 import Paypal from './views/paypal'
+import Fees from './views/fees'
+
 
 const App = () => {
   return (
@@ -39,6 +44,7 @@ const App = () => {
         <Route component={CreateRequest} exact path="/create-request" />
         <Route component={Login} exact path="/login" />
         <Route component={BudgetBuddy} exact path="/budget-buddy" />
+        <Route component={Fees} exact path="/fees" />
         <Route component={Home} exact path="/" />
         <Route
           component={ProductDetailsMouse}
@@ -77,4 +83,11 @@ const App = () => {
   )
 }
 
+
 ReactDOM.render(<App />, document.getElementById('app'))
+
+
+
+
+
+
