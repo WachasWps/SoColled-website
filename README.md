@@ -24,9 +24,9 @@ _Empowering College Life with Smart Social & Financial Tools_
 
 - [Overview](#-overview)
 - [Problem](#-problem)
-- [Why This Problem Exists](#why-this-problem-exists)
-- [Our Solution](#our-solution)
-- [Getting Started](#getting-started)
+- [Why This Problem Exists](#-why-this-problem-exists)
+- [Our Solution](#-our-solution)
+- [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
