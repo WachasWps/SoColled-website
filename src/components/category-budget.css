@@ -191,9 +191,9 @@
 }
 .category-budget-budget1 {
   flex: 0 0 auto;
-  width: 279px;
+  width: 296px;
   border: 1.5px solid rgba(255, 255, 255, 0.06);
-  height: 232px;
+  height: 270px;
   display: flex;
   padding: var(--dl-space-space-sixunits);
   align-items: center;
