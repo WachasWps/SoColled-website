@@ -26,6 +26,7 @@ _Empowering College Life with Smart Social & Financial Tools_
 - [Problem](#-problem)
 - [Why This Problem Exists](#-why-this-problem-exists)
 - [Our Solution](#-our-solution)
+  - [Core Features](#-core-features)
 - [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -40,7 +41,7 @@ _Empowering College Life with Smart Social & Financial Tools_
 
 ---
 
-**❓ Problem**
+### ❓ Problem
 
 College students often face difficulties with:
 
@@ -51,18 +52,18 @@ College students often face difficulties with:
 
 ---
 
-**🔍 Why This Problem Exists**
+### 🔍 Why This Problem Exists
 
 - Students use disconnected tools (Google Sheets, WhatsApp, Facebook groups) for financial planning, communication, and study coordination.
 - No single platform exists that integrates academic, financial, and social needs in a unified, student-first interface.
 
 ---
 
-**💡 Our Solution**
+### 💡 Our Solution
 
 **SoColled** is a centralized student utility platform with:
 
-**🧠 Core Features**
+### 🧠 Core Features
 
 - **💰 BudgetBuddy**  
   Track and predict monthly spending across categories (food, travel, etc.).
@@ -86,7 +87,7 @@ College students often face difficulties with:
 
 ### 🚀 Getting Started
 
-**🧰 Prerequisites**
+### Prerequisites
 
 - **Node.js**: v18.x or above  
 - **npm**: Latest version  
@@ -94,7 +95,7 @@ College students often face difficulties with:
 
 ---
 
-### 📦 Installation
+### Installation
 
     # 1. Clone the repository
     git clone https://github.com/sabhyalokhande/SoColled-website
@@ -105,7 +106,7 @@ College students often face difficulties with:
     # 3. Install all dependencies
     npm install
 
-**▶️ Usage**
+### Usage
 
 To run the development server:
 
@@ -113,9 +114,11 @@ To run the development server:
   
 This will launch the app on http://localhost:3000
 
-**🧪 Testing**
+### Testing
 
     npm test
     
 Runs the default React testing suite.
+
+---
 
